@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type="text/javascript">
+function abc()
+{
+	var i,j,k=5,l,m=2;
+	for(i=1;i<=5;i++)
+	{
+		for(j=1;j<=k;j++)
+			{
+				document.write("*");
+			}
+
+		for(l=3;l<=m;l++)
+			{
+				document.write("&nbsp;&nbsp;");
+			}
+
+		for(j=1;j<=k;j++)
+			{
+				document.write("*");
+			}
+		document.write("<br>");
+		k=k-1;
+		m=m+2;
+	}
+	
+	var i,j,k=1,l,m=8;
+	for(i=1;i<=5;i++)
+	{
+		for(j=1;j<=k;j++)
+			{
+				document.write("*");
+			}
+
+		for(l=1;l<=m;l++)
+			{
+				document.write("&nbsp;&nbsp;");
+			}
+
+		for(j=1;j<=k;j++)
+			{
+				document.write("*");
+			}
+		document.write("<br>");
+		k=k+1;
+		m=m-2;
+	}
+}
+</script>
+</head>
+<body>
+<input type="button" value="Print" onClick="abc()">
+</body>
+</html>

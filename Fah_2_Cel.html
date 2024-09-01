@@ -1,0 +1,23 @@
+<html>
+<head>
+<title> Fahrenheit to Celsius converter </title>
+<script type="text/javascript">
+function abc()
+{
+	var f,c;
+	f=parseFloat(document.f1.t1.value);
+	c=5*(f-32)/9;
+	document.getElementById("demo").innerHTML="Temperature in Celsius is "+c;
+}
+</script>
+</head>
+<body>
+<h1>Fahrenheit to Celsius</h1>
+<form name="f1">
+Enter temperature :- <input type="text" name="t1">
+&nbsp;
+<input type="button" value="Calculate" onClick="abc()">
+<p id="demo"></p>
+</form>
+</body>
+</html>

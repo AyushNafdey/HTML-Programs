@@ -1,0 +1,12 @@
+* {
+    background-color: yellow;
+}
+#main-header {
+    color: red;
+    font: 100, Verdana, serif;
+    font-style: bold;
+}
+
+.container{
+    font-weight: bold;
+}

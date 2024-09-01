@@ -1,0 +1,28 @@
+<html>
+<head>
+<script language="JavaScript">
+function abc()
+{
+var n,len,ch,ch1,ct=0,i;
+n=f1.t1.value;
+len=n.length;
+for(i=1;i<=len;i++)
+{
+ch=n.substring(i,i+1);
+ch1=ch.toUpperCase();
+if (ch1=="A"||ch1=="E"||ch1=="O"||ch1=="I"||ch1=="U")
+	{
+		ct=ct+1;
+	}
+}
+document.getElementById("demo").innerHTML=ct;
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<input type="text" name="t1">
+<input type="button" value="Print" onClick="abc()"><br>
+<p id="demo">The number of vowels are = </p>
+</form>
+</body</html>
