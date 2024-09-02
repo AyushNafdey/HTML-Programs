@@ -1,0 +1,13 @@
+body{
+    background-color: rgba(52, 231, 231, 0.89);
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin: 0vw 10vh 0vw 0vw;
+    padding: 10px;
+    /* list-style-type: none; */
+    /* list-style-image: url("F:\Ayush Programs\HTML Programs\Sigma_Web_Dev\download.jpeg"); */
+    list-style-type: "😎";
+}
