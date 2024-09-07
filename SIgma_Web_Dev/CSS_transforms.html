@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+</head>
+<style>
+    .container{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color:darkkhaki;
+        width: 80vw;
+        height: 80vh;
+    }
+    .box{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 75px;
+        height: 75px;
+        border-radius: 42px;
+        background-color: red;
+        animation: MyBounceAnimationX 4s linear 2 alternate-reverse,
+                    MyBounceAnimationY 4s linear 2 alternate-reverse;
+    }
+    
+    @keyframes MyBounceAnimationX{
+        0%{
+            background: red;
+            left: 0px;
+        }
+        /* 25%{
+            background: greenyellow;
+            left: 50px;
+        } */
+        /* 50%{
+            background: yellow;
+            left: 100px;
+        } */
+        100%{
+            background: pink;
+            left: 200px;
+        }
+        /* 100%{
+            background: cyan;
+            left: 0px;
+        } */
+    }
+
+    @keyframes MyBounceAnimationY{
+        0%{
+            bottom: 0px;
+        }
+        10%{
+            bottom: 10px;
+        }
+        20%{
+            bottom: 20px;
+        }
+        30%{
+            bottom: 30px;
+        }
+        40%{
+            bottom: 40px;
+        }
+        42%{
+            bottom: 42px;
+        }
+        44%{
+            bottom: 43px;
+        }
+        46%{
+            bottom: 44px;
+        }
+        48%{
+            bottom: 43px;
+        }
+        50%{
+            bottom: 42px;
+        }
+        60%{
+            bottom: 40px;
+        }
+        70%{
+            bottom: 30px;
+        }
+        80%{
+            bottom: 20px;
+        }
+        90%{
+            bottom: 10px;
+        }
+        100%{
+            background: cyan;
+            bottom: 0px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

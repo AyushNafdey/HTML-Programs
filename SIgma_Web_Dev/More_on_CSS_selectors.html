@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+</head>
+<style>
+    .boxes::before{
+        content: "My name is Ayush";
+        color: gold;
+        /* ye line select nhi hoti!! */
+    }
+    .boxes::after{
+        content: "I love electronics";
+        color: silver;
+        /* ye bhi line select nhi hoti!! */
+    }
+    ::selection{
+        color: green;
+        background-color: rgb(17, 188, 255);
+    }
+</style>
+<body>
+    <!-- .boxes>.box*3 -->
+    <div class="boxes">
+        <div class="box">I am the first box</div>
+        <div class="box">I am the second box</div>
+        <div class="box">I am the third box</div>
+    </div>
+</body>
+</html>
